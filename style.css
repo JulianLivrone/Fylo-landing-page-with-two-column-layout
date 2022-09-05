@@ -1,0 +1,338 @@
+/* =================
+   Table of Contents
+
+   1. Global Styles: Global styles for my project.
+   
+   2. HEADER
+
+   3. MAIN
+
+   4. FOOTER
+
+   x.1. Layout: Styles related with layout, e.g. header, nav, main, section, footer, div, etc.
+
+   x.2. Typography: Styles related to text, e.g. h1, h2, p, etc.
+
+   x.3. Assets: Styles related to assets, e.g. images, svg, etc.
+
+   x.4. Components: Styles related to components, e.g. buttons, etc.
+   ================= */
+
+/* =================
+   1. Global Styles
+   ================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  list-style-type: none;
+}
+
+body {
+  /* Primary */
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+
+  /* Accent */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+
+  /* Neutral */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+/* =============================== 
+   ========== 2. HEADER ========== 
+   =============================== */
+
+/* =================
+   2.1. Layout
+   ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+/* =================
+   2.2. Typography
+   ================= */
+
+/* =================
+   2.3. Assets
+   ================= */
+.header__logo {
+  width: 6rem;
+  height: 2rem;
+}
+
+/* =================
+   2.4. Components
+   ================= */
+.header__nav-item {
+  font-size: 0.85rem;
+  color: var(--very-dark-blue);
+}
+
+/* =============================== 
+   ========== 3. MAIN ========== 
+   =============================== */
+
+/* =================
+   3.1. Layout
+   ================= */
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.container-get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main__section-files-location {
+  padding: 1em;
+  padding-bottom: 4em;
+}
+
+.main__section-stay-productive {
+  background-color: var(--light-grayish-blue);
+  padding: 1em;
+  padding-bottom: 4em;
+}
+
+.main__section-stay-productive-article {
+  background-color: white;
+  padding: 2em;
+  padding-right: 1em;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1px black;
+}
+
+.container-user-information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.main__section-early-access {
+  background-color: var(--desaturated-blue);
+  padding: 3em 2em;
+  color: white;
+}
+
+/* =================
+   3.2. Typography
+   ================= */
+.title {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.title.main__section-stay-productive-title {
+  font-size: 1.25em;
+}
+
+.description {
+  text-align: center;
+}
+
+.description.main__section-stay-productive-description {
+  text-align: left;
+  margin: 1em 0;
+}
+
+.main__section-stay-productive-article__description {
+  position: relative;
+  padding-top: 1em;
+}
+
+.main__section-stay-productive-article__description::before {
+  content: open-quote;
+  position: absolute;
+  top: -20%;
+  left: -1.5%;
+  font-size: 4rem;
+}
+
+.container-user-information-name {
+  font-size: 1em;
+  margin-bottom: 0.25em;
+}
+
+.container-user-information-position {
+  font-size: 0.75em;
+}
+
+/* =================
+   3.3. Assets
+   ================= */
+.main__section-files-location-image {
+  width: 100%;
+  height: auto;
+}
+
+.container-images__image {
+  width: 100%;
+  height: auto;
+}
+
+.image-curve {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.main__section-stay-productive-image {
+  width: 100%;
+  height: auto;
+}
+
+.image-icon-arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.container-user-information-image {
+  border-radius: 10000000px;
+  width: 50px;
+  height: 50px;
+}
+
+/* =================
+   3.4. Components
+   ================= */
+.container-get-started__input {
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.container-get-started__button {
+  width: 100%;
+  border-radius: 0.25em;
+  background-color: var(--bright-blue);
+  color: var(--light-grayish-blue);
+  border: none;
+  padding: 1em;
+}
+
+.main__section-stay-productive-link {
+  color: var(--very-dark-blue);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  position: relative;
+  color: var(--moderate-cyan);
+  margin-bottom: 2.5em;
+  margin-top: 1em;
+}
+
+.main__section-stay-productive-link::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--moderate-cyan);
+  bottom: -20%;
+}
+
+/* =============================== 
+   ========== 4. FOOTER ========== 
+   =============================== */
+
+/* =================
+   4.1. Layout
+   ================= */
+.footer {
+  background-color: var(--very-dark-blue);
+  color: white;
+  padding: 2em;
+}
+
+.footer__container-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+
+/* =================
+   4.2. Typography
+   ================= */
+
+/* =================
+   4.3. Assets
+   ================= */
+.footer__logo {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(79deg)
+    brightness(103%) contrast(101%);
+  width: 60%;
+  height: auto;
+  margin: 2em 0;
+}
+
+.image-icon-contact {
+  width: 20px;
+  height: 20px;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+.image-icon-social-media {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(79deg)
+    brightness(103%) contrast(101%);
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 1000000px;
+  padding: 0.8em;
+}
+
+/* =================
+   4.4. Components
+   ================= */
+.footer__list-other-pages {
+  margin: 3em 0;
+}
+
+.footer__list-other-pages-item {
+  margin: 1em 0;
+}
