@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here]()
+- Solution URL: [Solution URL here](https://github.com/JulianLivrone/Fylo-landing-page-with-two-column-layout)
+- Live Site URL: [Live site URL here](https://julianlivrone.github.io/Fylo-landing-page-with-two-column-layout/)
 
 ## My process
 

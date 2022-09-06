@@ -93,6 +93,12 @@ body {
 .header__nav-item {
   font-size: 0.85rem;
   color: var(--very-dark-blue);
+  cursor: pointer;
+}
+
+.header__nav-item:hover,
+.header__nav-item:focus {
+  opacity: 0.7;
 }
 
 /* =============================== 
