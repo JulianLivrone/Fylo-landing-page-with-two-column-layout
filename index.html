@@ -39,7 +39,7 @@
           src="./images/illustration-1.svg"
           alt=""
         />
-        <div>
+        <div class="main__section-files-location-info">
           <h1 class="title main__section-files-location-title">
             All your files in one secure location, accessible anywhere.
           </h1>
@@ -65,50 +65,59 @@
           src="./images/illustration-2.svg"
           alt=""
         />
-        <h2 class="title main__section-stay-productive-title">
-          Stay productive, wherever you are
-        </h2>
-        <p class="description main__section-stay-productive-description">
-          Never let location be an issue when accessing your files. Fylo has you
-          covered for all of your file storage needs.
-        </p>
-        <p class="description main__section-stay-productive-description">
-          Securely share files and folders with friends, family and colleagues
-          for live collaboration. No email attachments required!
-        </p>
-        <a href="#" class="main__section-stay-productive-link"
-          >See how Fylo works
-          <img class="image-icon-arrow" src="./images/icon-arrow.svg" alt=""
-        /></a>
-        <article class="main__section-stay-productive-article">
-          <p class="main__section-stay-productive-article__description">
-            Fylo has improved our team productivity by an order of magnitude.
-            Since making the switch our team has become a well-oiled
-            collaboration machine.
+        <div class="main__section-stay-productive-info">
+          <h2 class="title main__section-stay-productive-title">
+            Stay productive, wherever you are
+          </h2>
+          <p class="description main__section-stay-productive-description">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
           </p>
-          <div class="container-user-information">
-            <img
-              class="container-user-information-image"
-              src="./images/avatar-testimonial.jpg"
-              alt=""
-            />
-            <div>
-              <h3 class="container-user-information-name">Kyle Burton</h3>
-              <h4 class="container-user-information-position">
-                Founder & CEO, Huddle
-              </h4>
-            </div>
+          <p class="description main__section-stay-productive-description">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+          <div class="main__section-stay-productive-container-link">
+            <a href="#" class="main__section-stay-productive-link"
+              >See how Fylo works
+              <img
+                class="image-icon-arrow"
+                src="./images/icon-arrow.svg"
+                alt=""
+            /></a>
           </div>
-        </article>
+          <article class="main__section-stay-productive-article">
+            <p class="main__section-stay-productive-article__description">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="container-user-information">
+              <img
+                class="container-user-information-image"
+                src="./images/avatar-testimonial.jpg"
+                alt=""
+              />
+              <div>
+                <h3 class="container-user-information-name">Kyle Burton</h3>
+                <h4 class="container-user-information-position">
+                  Founder & CEO, Huddle
+                </h4>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
       <section class="section main__section-early-access">
-        <h2 class="title">Get early access today</h2>
-        <p class="description">
-          It only takes a minute to sign up and our free starter tier is
-          extremely generous. If you have any questions, our support team would
-          be happy to help you.
-        </p>
-        <div class="container-get-started">
+        <div class="section-early-access__container-info">
+          <h2 class="title">Get early access today</h2>
+          <p class="description">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <div class="container-get-started container-get-started-early-access">
           <input
             class="container-get-started__input"
             type="email"
@@ -122,50 +131,52 @@
     </main>
     <footer class="footer">
       <img class="footer__logo" src="./images/logo.svg" alt="" />
-      <ul class="footer__list-contact">
-        <li>
+      <div class="footer__container-contact">
+        <ul class="footer__list-contact">
+          <li>
+            <img
+              class="image-icon-contact"
+              src="./images/icon-phone.svg"
+              alt=""
+            />Phone: +1-543-123-4567
+          </li>
+          <li>
+            <img
+              class="image-icon-contact"
+              src="./images/icon-email.svg"
+              alt=""
+            />
+            example@fylo.com
+          </li>
+        </ul>
+        <ul class="footer__list-other-pages">
+          <li class="footer__list-other-pages-item">About Us</li>
+          <li class="footer__list-other-pages-item">Jobs</li>
+          <li class="footer__list-other-pages-item">Press</li>
+          <li class="footer__list-other-pages-item">Blog</li>
+        </ul>
+        <ul class="footer__list-other-pages">
+          <li class="footer__list-other-pages-item">Contact Us</li>
+          <li class="footer__list-other-pages-item">Terms</li>
+          <li class="footer__list-other-pages-item">Privacy</li>
+        </ul>
+        <div class="footer__container-social-media">
           <img
-            class="image-icon-contact"
-            src="./images/icon-phone.svg"
-            alt=""
-          />Phone: +1-543-123-4567
-        </li>
-        <li>
-          <img
-            class="image-icon-contact"
-            src="./images/icon-email.svg"
+            class="image-icon-social-media"
+            src="./images/facebook-f.svg"
             alt=""
           />
-          example@fylo.com
-        </li>
-      </ul>
-      <ul class="footer__list-other-pages">
-        <li class="footer__list-other-pages-item">About Us</li>
-        <li class="footer__list-other-pages-item">Jobs</li>
-        <li class="footer__list-other-pages-item">Press</li>
-        <li class="footer__list-other-pages-item">Blog</li>
-      </ul>
-      <ul class="footer__list-other-pages">
-        <li class="footer__list-other-pages-item">Contact Us</li>
-        <li class="footer__list-other-pages-item">Terms</li>
-        <li class="footer__list-other-pages-item">Privacy</li>
-      </ul>
-      <div class="footer__container-social-media">
-        <img
-          class="image-icon-social-media"
-          src="./images/facebook-f.svg"
-          alt=""
-        />
-        <img
-          class="image-icon-social-media"
-          src="./images/twitter.svg"
-          alt=""
-        />
-        <img
-          class="image-icon-social-media"
-          src="./images/instagram.svg"
-          alt=""
-        />
+          <img
+            class="image-icon-social-media"
+            src="./images/twitter.svg"
+            alt=""
+          />
+          <img
+            class="image-icon-social-media"
+            src="./images/instagram.svg"
+            alt=""
+          />
+        </div>
       </div>
     </footer>
   </body>
